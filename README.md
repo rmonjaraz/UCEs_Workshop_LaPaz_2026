@@ -40,7 +40,7 @@ Aqui encontraran las diapositivas del curso por día:
 ### Datos
 Aquí encontraran todos los archivos de entrada y salida para los ejercicios, en caso de que algún paso no se pueda reproducir o se atrasen durante la clase, aqui pueden retomar los archivos, organizados por programa y tipo de análisis:
 
-[Datos y Arvhivos](~/Data)
+[Datos y Arvhivos](https://drive.google.com/drive/folders/1KxKB5jOsHOl4zak6WhVBaljc5kiJzTFy?usp=drive_link)
 
 ### Tutoriales
 Instrucciones y scripts necesarios para reproducir los análisis y ejercicios del curso por session:
@@ -65,7 +65,7 @@ Instrucciones y scripts necesarios para reproducir los análisis y ejercicios de
 ### Literatura
 Carpeta con artículos de referencia y/o de interés para el curso.
 
-[Literatura](~/Literatura)
+[Literatura](https://drive.google.com/drive/folders/1hoYlKACopRpwfPqRiVEP_DMWWnqjKx6W?usp=drive_link)
 
 ## Software
 Para detalles de como instalar estos programas revisar el [tutorial de instalación][0] o los sitios de cada programa. Mesquite provee de instrucciones bastante detalladas para la instalación.
