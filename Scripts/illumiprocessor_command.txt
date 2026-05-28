@@ -1,0 +1,9 @@
+# Regex Pattern is important when runnin illimuprocessor using SRA samples
+
+illumiprocessor \
+--input Raw_Fastqs/ \
+--output illumi_OUT \
+--config illumiprocessor.conf \
+--cores 12 \
+--r1-pattern "{}_(1).fastq(?:.gz)*" \
+--r2-pattern "{}_(2).fastq(?:.gz)*"
