@@ -40,7 +40,8 @@ Aqui encontraran las diapositivas del curso por día:
 ### Datos
 Aquí encontraran todos los archivos de entrada y salida para los ejercicios, en caso de que algún paso no se pueda reproducir o se atrasen durante la clase, aqui pueden retomar los archivos, organizados por programa y tipo de análisis:
 
-[Datos y Arvhivos](https://drive.google.com/drive/folders/1KxKB5jOsHOl4zak6WhVBaljc5kiJzTFy?usp=drive_link)
+Datos y Arvhivos
+<!--[Datos y Arvhivos](https://drive.google.com/drive/folders/1KxKB5jOsHOl4zak6WhVBaljc5kiJzTFy?usp=drive_link)-->
 
 ### Tutoriales
 Instrucciones y scripts necesarios para reproducir los análisis y ejercicios del curso por session:
