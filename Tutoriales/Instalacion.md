@@ -139,11 +139,15 @@ Estos programas se instalan principalmente utilizando CONDA, lo cual simplifica 
    ```
    conda install bioconda::sra-tools
    ```
-5. Instalamos iqtree
+5. Instalamos sra-tools
+   ```
+   pip install gunzip
+   ```
+6. Instalamos iqtree
    ```
    conda install bioconda::iqtree
    ```
-6. Instalamos ASTER (ASTRAL)
+7. Instalamos ASTER (ASTRAL)
    ```
    conda install aster
    ```

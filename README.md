@@ -32,10 +32,10 @@ Este es un curso corto e intensivo sobre el procesamiento de datos provenientes 
 ### Diapositivas
 Aqui encontraran las diapositivas del curso por día:
 
-- [Diapositivas Día 1](~/Presentaciones/Dia1.pdf)
-- [Diapositivas Día 2](~/Presentaciones/Dia2.pdf)
-- [Diapositivas Día 3](~/Presentaciones/Dia3.pdf)
-- [Diapositivas Día 4](~/Presentaciones/Dia4.pdf)
+- Diapositivas Día 1 <!-- [1] -->
+- Diapositivas Día 2
+- Diapositivas Día 3
+- Diapositivas Día 4
 
 ### Datos
 Aquí encontraran todos los archivos de entrada y salida para los ejercicios, en caso de que algún paso no se pueda reproducir o se atrasen durante la clase, aqui pueden retomar los archivos, organizados por programa y tipo de análisis:
@@ -46,21 +46,15 @@ Aquí encontraran todos los archivos de entrada y salida para los ejercicios, en
 Instrucciones y scripts necesarios para reproducir los análisis y ejercicios del curso por session:
 
 - [Instalación][0]
-- [Session 1: Introducción a Secuenciación de Nueva Generación, Manejo de datos y planeación de proyectos.][1]
-- [Session 2: Introducción a la Bioinformática][2]
-- [Session 3: Procesamiento de datos genómicos - Limpieza y Control de calidad][3]
-- [Session 4: Procesamiento de datos genómicos - Ensamblaje][4]
-- [Session 5: Procesamiento de datos genómicos - Extracción de sequencias][5]
-- [Session 6: Filogenómica - Alineamientos, Poda y Datos Faltantes][6]
-- [Session 7: Filogenómica - FUSe][7]
-- [Session 8: Filogenómica - Mesquite][8]
-- [Session 9: Filogenómica - Estimación de árboles - IQTree y ASTRAL][9]
-
-### Cuestionarios
-- [Cuestionario Dia 1]()
-- [Cuestionario Dia 2]()
-- [Cuestionario Dia 3]()
-- [Cuestionario Dia 4]()
+<!-- - [Session 1: Introducción a Secuenciación de Nueva Generación, Manejo de datos y planeación de proyectos.][1]-->
+<!-- - [Session 2: Introducción a la Bioinformática][2]-->
+<!-- - [Session 3: Procesamiento de datos genómicos - Limpieza y Control de calidad][3]-->
+<!-- - [Session 4: Procesamiento de datos genómicos - Ensamblaje][4]-->
+<!-- - [Session 5: Procesamiento de datos genómicos - Extracción de sequencias][5]-->
+<!-- - [Session 6: Filogenómica - Alineamientos, Poda y Datos Faltantes][6]-->
+<!-- - [Session 7: Filogenómica - FUSe][7]-->
+<!-- - [Session 8: Filogenómica - Mesquite][8]-->
+<!-- - [Session 9: Filogenómica - Estimación de árboles - IQTree y ASTRAL][9]-->
 
 ### Literatura
 Carpeta con artículos de referencia y/o de interés para el curso.
@@ -68,7 +62,7 @@ Carpeta con artículos de referencia y/o de interés para el curso.
 [Literatura](https://drive.google.com/drive/folders/1hoYlKACopRpwfPqRiVEP_DMWWnqjKx6W?usp=drive_link)
 
 ## Software
-Para detalles de como instalar estos programas revisar el [tutorial de instalación][0] o los sitios de cada programa. Mesquite provee de instrucciones bastante detalladas para la instalación.
+Para detalles de como instalar estos programas revisar el [tutorial de instalación][0] o los sitios de cada programa. Mesquite provee de instrucciones bastante detalladas para la instalación. SublimeText, FigTree y FastQC tienen interfaz grafica que puede ser instalada de forma convencional.
 - [SublimeText](https://www.sublimetext.com/) o cualquier Editor de Texto
 - [Phyluce](https://phyluce.readthedocs.io/en/latest/index.html)
 - [Mesquite](https://www.mesquiteproject.org/)
@@ -78,6 +72,7 @@ Para detalles de como instalar estos programas revisar el [tutorial de instalaci
 - [FUSe](https://github.com/rmonjaraz/FUSe)
 - [AMAS](https://github.com/marekborowiec/AMAS)
 - [sra-tools](https://github.com/ncbi/sra-tools)
+- [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
 
 [0]:https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Tutoriales/Instalacion.md
