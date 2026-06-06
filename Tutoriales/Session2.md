@@ -169,7 +169,8 @@ cd /Users/Roderick/Data/SRA/clean-reads-phyluce/alligator_mississippiensis/split
 `NOTA: En alguna ocasiones es importante proveer a los programas con las rutas absolutas, en particular si estamos trabajando con archivos en diferentes folders.`
 
 Reto: Con base en el diagrama mostrado abajo, si escribimos `pwd` para ubicarnos en el sistema y obtenemos `/Users/thing`, ¿cual sera el resultado si escribimos ls ../backup?
-<img src="https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Imagenes/navegacion.svg" width="30%">
+
+<img src="https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Imagenes/navegacion.svg" width="50%">
 
 
 ### Atajos de Navegación
@@ -308,7 +309,7 @@ ls -l
 `-rwx------  1 rmonjarazruedas  RESEARCH\Domain Users  809565 Sep  6  2022 Sample1-READ1.fastq`
 `-rwx------  1 rmonjarazruedas  RESEARCH\Domain Users  904299 Sep  6  2022 Sample1-READ2.fastq`
 
-<img src="https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Imagenes/rwx_figure.svg" width="30%">
+<img src="https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Imagenes/rwx_figure.svg" width="50%">
 
 Vamos a cambiar los permisos de `file1.txt` para solo leer `-r` y evitar así cambios por error, usaremos el programa `chmod` que es abreviación de “Change Mode” en ingles.
 ```bash
