@@ -169,7 +169,8 @@ cd /Users/Roderick/Data/SRA/clean-reads-phyluce/alligator_mississippiensis/split
 `NOTA: En alguna ocasiones es importante proveer a los programas con las rutas absolutas, en particular si estamos trabajando con archivos en diferentes folders.`
 
 Reto: Con base en el diagrama mostrado abajo, si escribimos `pwd` para ubicarnos en el sistema y obtenemos `/Users/thing`, ¿cual sera el resultado si escribimos ls ../backup?
-<img src="https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Figuras/navegacion.svg" width="10%">
+<img src="https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Imagenes/navegacion.svg" width="30%">
+
 
 ### Atajos de Navegación
 El directorio de raiz es el folder mas alto en el sistema, normalmente aqui se almacenan archivos y folders importantes para el funcionamiento correcto de tu computadora, por lo cual se aconseja no trabajar directamente aquí nunca si no al contrario, crear directorios por debajo de esta categoría lo cual garantizara que no modifiquemos nada crucial en nuestra computadora. Cuando buscamos nuestra ubicación con `pwd` siempre observamos el archivo de raíz (root) y nuestro directorio de inicio (home) en mi caso es `/Users/Roderick` `Users` es mi directorio raíz y `Roderick` es mi directorio de inicio, aqui usualmente se instalan programas como conda o mesquite. Instalar cosas o modificar archivos en “root” normalmente require de permisos especiales.
@@ -307,7 +308,7 @@ ls -l
 `-rwx------  1 rmonjarazruedas  RESEARCH\Domain Users  809565 Sep  6  2022 Sample1-READ1.fastq`
 `-rwx------  1 rmonjarazruedas  RESEARCH\Domain Users  904299 Sep  6  2022 Sample1-READ2.fastq`
 
-<img src="https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Figuras/rwx_figure.svg" width="10%">
+<img src="https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Imagenes/rwx_figure.svg" width="30%">
 
 Vamos a cambiar los permisos de `file1.txt` para solo leer `-r` y evitar así cambios por error, usaremos el programa `chmod` que es abreviación de “Change Mode” en ingles.
 ```bash
