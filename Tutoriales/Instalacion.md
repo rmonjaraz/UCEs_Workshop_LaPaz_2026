@@ -17,7 +17,7 @@ wsl --install
 ```
 3. Reinicia tu computadora, desde la terminal escribe:
 ```
-Restart-Conmputer
+Restart-Computer
 ```
 4. Una vez se reinicio tu computadora, abre el menu de windows y da click en el recién instalado WSL icono con la 	imagen del pingüino.
 <img src="https://github.com/microsoft/WSL/blob/master/Images/Square44x44Logo.targetsize-256.png?raw=true" width="5%">
