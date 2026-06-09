@@ -32,7 +32,7 @@ Este es un curso corto e intensivo sobre el procesamiento de datos provenientes 
 ### Diapositivas
 Aqui encontraran las diapositivas del curso por día:
 
-- Diapositivas Día 1 <!-- [1] -->
+- [Diapositivas Día 1](https://drive.google.com/file/d/1Cauk9yruRRMydlX1HZIckdQhaGnmfXM4/view?usp=sharing)
 - Diapositivas Día 2
 - Diapositivas Día 3
 - Diapositivas Día 4
@@ -47,8 +47,8 @@ Instrucciones y scripts necesarios para reproducir los análisis y ejercicios de
 
 - [Instalación][0]
 - [Session 2: Introducción a la Bioinformática][2]
-- [Session 3: Procesamiento de datos genómicos - Limpieza y Control de calidad]<!--[3]-->
-- [Session 4: Procesamiento de datos genómicos - Ensamblaje]<!--[4]-->
+- [Session 3: Procesamiento de datos genómicos - Limpieza y Control de calidad][3]
+- [Session 4: Procesamiento de datos genómicos - Ensamblaje][4]
 - [Session 5: Procesamiento de datos genómicos - Extracción de sequencias]<!--[5]-->
 - [Session 6: Filogenómica - Alineamientos, Poda y Datos Faltantes]<!--[6]-->
 - [Session 7: Filogenómica - FUSe]<!--[7]-->
