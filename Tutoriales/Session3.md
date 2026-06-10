@@ -43,7 +43,7 @@ cd prefetchSRA
 ```
 
 Obtengamos los códigos de SRA que están listados en el archivo txt `biosample_result_SRA.txt`
-```
+```bash
 while read -r line
 do
 prefetch $line
@@ -160,10 +160,10 @@ python trimmobatch.py \
 -R raw_SRA_fastqs/ \
 -n 12
 ```
--I Esta opción es para proveer de la lista de especies que creamos.
--O es un prefijo para nombrar nuestro folder de salida.
--R es el folder con todos nuestros archivos Fastq bajados del SRA
--n Indica el numero de núcleos de tu computadora a usar.
+`-I` Esta opción es para proveer de la lista de especies que creamos.
+`-O` es un prefijo para nombrar nuestro folder de salida.
+`-R` es el folder con todos nuestros archivos Fastq bajados del SRA
+`-n` Indica el numero de núcleos de tu computadora a usar.
 
 ### Illumiprocessor
 Por cuestiones didácticas, vamos a limpiar estas secuencias utilizando `Illumiprocessor` que es el programa por default utilizado en `Phyluce`. Este paso esta pensado en un caso en el que tienes secuencias completamente nuevas, generadas por un proyecto propio, por consiguiente tienes información respecto al tipo de secuenciación y en específico las secuencias índice o “barcodes” que marcan cada muestra durante el proceso de “demultiplexing”. Sin esta información, por ejemplo al descargar secuencias del SRA, es mas complicado usar `Illumiprocesor`.
