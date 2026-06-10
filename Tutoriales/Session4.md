@@ -54,7 +54,7 @@ Crea los enlaces, para esto usaremos el programa `ln -s` aquí tienes que propor
 ```bash
 for i in *
 do
-  ln -s /Users/Roderick/Desktop/Hexurella_Workshop/Data/Assembly/assemblies-phyluce/$i/contigs.fasta /Users/Roderick/Desktop/Hexurella_Workshop/Data/Assembly/contigs_phyluce/contigs$i.fasta
+  ln -s /Users/Roderick/Desktop/Hexurella_Workshop/Data/Assembly/assemblies-phyluce/$i/contigs.fasta /Users/Roderick/Desktop/Hexurella_Workshop/Data/Assembly/contigs_phyluce/$i.fasta
 done
 ```
 Si prefieres copiar los archivos, solo tienen que reemplazar `ln -s` por `cp`.
