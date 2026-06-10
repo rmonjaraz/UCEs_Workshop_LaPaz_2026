@@ -103,13 +103,13 @@ Ahora abre alguno de los archivos que recién descargamos del SRA, y comparado c
 ### Remover Adaptadores
 Si recuerdas de nuestra sesión de secuenciación los adaptadores que contienen primers e indices no se requieren a este punto una ves que las muestras han sido “demultiplexed”. Para esto necesitamos remover los adaptadores, remover secuencias de muy baja calidad por base, secuencias con solo datos faltantes como “Ns” o secuencias cortas, en otras palabras, realizar un control de calidad de nuestras secuencias, uno de los programas mas populares es [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) este es el mismo paso que se sugiere en el tutorial de Phyluce para limpiar secuencias usando [Illumiprocessor](https://phyluce.readthedocs.io/en/latest/tutorials/tutorial-1.html) en realidad este programa de python también utiliza `Trimmomatic`. Vamos a realizar ambos pasos para entender como hacer este paso cuando phyluce o fuera de phyluce.
 
-Para usar `Trimmomatic` con los datos de SRA vamos a utilizar un bucle creado por [Guilherme Azevedo](https://ghfazevedo.github.io/) y nombrado `trimmobatch` que facilita el ingresar los datos utilizando un archivo de configuración simplificado, lo cual hace más accesible este paso incluso que `Illimiprocessor`. Otra ventaja de `Trimmomatic` es que podemos usarla aun cuando desconocemos los datos de indices utilizados en la creación de bibliotecas, y que es requerido en `Illumiprocessor`.
+Para usar `Trimmomatic` con los datos de SRA vamos a utilizar un programa de python llamado `trimmobatch.py` que nos ayudará a procesar múltiples muestras de forma automátizada y por lotes de muestras. También nos facilita el ingresar los datos utilizando un archivo de configuración simplificado que es un simple archivo CSV (valores separados por comas), lo cual hace más accesible este paso incluso que `Illimiprocessor`. Otra ventaja de `trimmobatch.py` es que podemos usarlo aun cuando desconocemos los datos de indices utilizados en la creación de bibliotecas, y que es requerido en `Illumiprocessor`.
 
-Necesitamos una lista de archivos, vamos a utilizar la información en `SraRunInfo.csv` tenemos que hacer coincidir el numero de corrida de SRA usado para descargar los datos con su metadata (especie, código de voucher, etc.). "Ver diapositiva de Adaptadores"
+Necesitamos una lista de archivos, vamos a utilizar la información en `SraRunInfo.csv` tenemos que hacer coincidir el numero de accession de SRA usado para descargar los datos con sus metadatos (especie, código de voucher, etc.). "Ver diapositiva de Adaptadores"
 
 NOTA: Aqui es una excelente oportunidad para renombrar nuestros archivos a algo mas util e informativo, esto nos evitara dolores de cabeza en el futuro, evita utilizar cualquier característica especial, no espacios, acentos, comas, puntos, etc. Utiliza `_` Guin bajo para reemplazar espacios y no combines guiones bajos `_` con guiones `-` mantenlo todo parejo. Otro tip es mantener tus nombres por debajo de 34 caracteres para también evitar conflictos mas adelante. Las reglas de buen uso serian: Especie_NoCatalogo.
 
-`trimmobatch` se encuentra en el folder de Datos en [Scripts](). El archivo requerido es un archivo separado por comas `csv` y la estructura es algo así:
+`trimmobatch.py` se encuentra en el repository de GitHub en la carpeta de [Scripts](https://github.com/rmonjaraz/UCEs_Workshop_LaPaz_2026/blob/main/Scripts). El archivo requerido es un archivo separado por comas `csv` y la estructura es algo así:
 ```
 Sample1_R1.fastq.gz,Sample1_R2.fastq.gz,Sample_name_1 
 Sample2_R1.fastq.gz,Sample2_R2.fastq.gz,Sample_name_2
@@ -143,21 +143,27 @@ Cuando estés satisfecho con tus nombres, sustituye TAB por coma (para crear un 
 
 *NOTA: Este archivo se encuentra en el folder de `Data` por si prefieres usar este.*
 
-Una vez obtenido este archivo estamos listos para correr `trimmobatch` usando argumentos para indicar las opciones:
+Una vez obtenido este archivo estamos listos para correr `trimmobatch.py` usando argumentos para indicar las opciones:
+
+Activamos primero nuestro ambiente conda de `phyluce` donde tenemos instalado `trimmomatic`
+
+
 ```bash
-sh /Data/Scripts/trimmobatch/trimmobatch \
+conda activate phyluce1.7
+```
+
+Ahora corremos `trimmobatch.py`
+```bash
+python trimmobatch.py \
 -I list_of_samples.txt \
 -O Hexurella \
--R raw_SRA_fastqs/ \ \
--a trimmobatch/all_paired.fa \
+-R raw_SRA_fastqs/ \
 -n 12
 ```
-Provee la ruta absoluta del programa, arrastrando a la terminal. `sh` le indica al sistema que es un archivo ejecutable.
 -I Esta opción es para proveer de la lista de especies que creamos.
 -O es un prefijo para nombrar nuestro folder de salida.
--R es el folder con todos nuestras secuencias crudas bajadas del SRA
--a es la ruta al archivo que contiene las secuencias de adaptadores, este esta incluido dentro de `trimmobatch`. También provee de la ruta absoluta.
--n Indica el numero de nucleos de tu computadora a usar.
+-R es el folder con todos nuestros archivos Fastq bajados del SRA
+-n Indica el numero de núcleos de tu computadora a usar.
 
 ### Illumiprocessor
 Por cuestiones didácticas, vamos a limpiar estas secuencias utilizando `Illumiprocessor` que es el programa por default utilizado en `Phyluce`. Este paso esta pensado en un caso en el que tienes secuencias completamente nuevas, generadas por un proyecto propio, por consiguiente tienes información respecto al tipo de secuenciación y en específico las secuencias índice o “barcodes” que marcan cada muestra durante el proceso de “demultiplexing”. Sin esta información, por ejemplo al descargar secuencias del SRA, es mas complicado usar `Illumiprocesor`.
@@ -170,14 +176,14 @@ El archivo de configuración de `Illumiprocesor` contiene esta información en d
 
 Una vez creado este archivo, correr `Illumiprocesor` es muy similar a correr `trimmobatch`, solo necesitamos proveer de algunos argumentos.
 
-```python
+```bash
 illumiprocessor \
 --input raw_SRA_fastqs/ \
 --output illumiprocessor_clean_fastqs \
 --config illumiprocessor.conf \
 --cores 12 \
---r1-pattern "{}_(1).fastq(?:.gz)*" \
---r2-pattern "{}_(2).fastq(?:.gz)*"
+--r1-pattern '{}_(1).fastq.gz' \
+--r2-pattern '{}_(2).fastq.gz'
 ```
 Indicar el REGEX ("regular expression") adecuado en los argumentos `--r1-pattern` y `--r2-pattern` es importante cuando se trabaja con archivos de SRA ya que estos no tienen el clásico nombre que se obtiene de compañías de secuenciación.
 
