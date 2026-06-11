@@ -34,7 +34,7 @@ Aqui encontraran las diapositivas del curso por día:
 
 - [Diapositivas Día 1](https://drive.google.com/file/d/1Cauk9yruRRMydlX1HZIckdQhaGnmfXM4/view?usp=sharing)
 - [Diapositivas Día 2](https://drive.google.com/file/d/11PS-5V2F6L7m7XcQLTRdvW1Ab55k2ngg/view?usp=sharing)
-- Diapositivas Día 3
+- [Diapositivas Día 3](https://drive.google.com/file/d/1lXSy-vBx9Z16CLLKmx29D2jlKKjlhILb/view?usp=sharing)
 - Diapositivas Día 4
 
 ### Datos
@@ -52,7 +52,7 @@ Instrucciones y scripts necesarios para reproducir los análisis y ejercicios de
 - [Session 5: Procesamiento de datos genómicos - Extracción de sequencias][5]
 - [Session 6: Filogenómica - Alineamientos, Poda y Datos Faltantes][6]
 - [Session 7: Filogenómica - FUSe][7]
-- [Session 8: Filogenómica - Estimación de árboles - IQTree y ASTRAL]<!--[8]-->
+- [Session 8: Filogenómica - Estimación de árboles - IQTree y ASTRAL][8]
 <!-- - [Session 9: Filogenómica - Mesquite][9] -->
 
 ### Literatura
