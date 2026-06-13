@@ -35,7 +35,7 @@ Aqui encontraran las diapositivas del curso por día:
 - [Diapositivas Día 1](https://drive.google.com/file/d/1Cauk9yruRRMydlX1HZIckdQhaGnmfXM4/view?usp=sharing)
 - [Diapositivas Día 2](https://drive.google.com/file/d/11PS-5V2F6L7m7XcQLTRdvW1Ab55k2ngg/view?usp=sharing)
 - [Diapositivas Día 3](https://drive.google.com/file/d/1lXSy-vBx9Z16CLLKmx29D2jlKKjlhILb/view?usp=sharing)
-- Diapositivas Día 4
+- [Diapositivas Día 4](https://drive.google.com/file/d/1kvu9vkd-HH3UVgTgRhBBnbXwQB7ZYOgg/view?usp=sharing)
 
 ### Datos
 Aquí encontraran todos los archivos de entrada y salida para los ejercicios, en caso de que algún paso no se pueda reproducir o se atrasen durante la clase, aqui pueden retomar los archivos, organizados por programa y tipo de análisis:
